@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Segundex</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/equaçãodoispontos.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Clássica</a>
+        <a href="equacaoDoisPontos.html" class="selecionada">Equações Dois Pontos</a>
+        <a href="distanciaPontoEReta.html">Distância entre Ponto e Reta</a>
+        <a href="equacaoReduzida.html">Equação Reduzida</a>
+        <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
+    </nav>
+
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display" />
+
+        <div class="pontos">
+
+            <label>Ponto A</label>
+            <div><span>X:</span><input type="number" class="ponto" id="xPontoA"></div>
+                <div><span>Y:</span><input type="number" class="ponto" id="yPontoA"></div>
+            
+        </div>
+
+        <div class="pontos">
+
+            <label>Ponto B</label>
+            <div><span>X:</span><input type="number" class="ponto" id="xPontoB"></div>
+                <div><span>Y:</span><input type="number" class="ponto" id="yPontoB"></div>
+
+            </div>
+
+            <div class="primeira-linha">
+             <button onclick="limpar()">LIMPAR</button>
+            </div>
+
+            <div class="botoes-calculo">
+                <button onclick="calcularDistancia()">DISTÂNCIA</button>
+                <button onclick="calcularPontoMedio()">PONTO MÉDIO</button>
+                <button onclick="calcularEquaçaodaReta()">EQUAÇÃO DA RETA</button>
+                <button onclick="Coeficiente()">COEFICIENTE</button>
+            </div>
+
+        
+    </div>
+    
+  <script src="javascript/equacaodoispontos.js"></script>s
+</body>
+
+</html>
